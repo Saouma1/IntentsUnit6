@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/textViewDescription1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="The collegiate women’s choirs of The College of St. Scholastica, College of St. Benedict, University of Northwestern–St. Paul, and the University of St. Thomas will collaborate to perform songs of struggle, strength, and empowerment."
+        app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/buttonWeb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="Web Info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescription1" />
+
+    <Button
+        android:id="@+id/buttonCalendar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:text="Add to Calendar"
+        app:layout_constraintStart_toEndOf="@+id/buttonWeb1"
+        app:layout_constraintTop_toTopOf="@+id/buttonWeb1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spotlight Events"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/buttonMap1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:text="Map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalendar1"
+        app:layout_constraintTop_toTopOf="@+id/buttonCalendar1" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStatus"
+        app:srcCompat="@drawable/stillrise" />
+
+    <TextView
+        android:id="@+id/textViewTitle1"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Still I Rise - Bella Voce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/textViewDate1"
+        android:layout_width="286dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:text="April 8, 2022, 7:30-8:30 P.M."
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitle1"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitle1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle1" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Status"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="21dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPi"
+        android:layout_width="104dp"
+        android:layout_height="131dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMap1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pi" />
+
+    <TextView
+        android:id="@+id/textViewPi"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Feel the Groove: Piazzolla and Tango Nuevo"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPi"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPi" />
+
+    <TextView
+        android:id="@+id/textViewPiDescription"
+        android:layout_width="286dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:text="October 21, 2023, 7:30-9:00 P.M."
+        app:layout_constraintStart_toStartOf="@+id/textViewPi"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPi" />
+
+    <TextView
+        android:id="@+id/textViewDescruiptionPi"
+        android:layout_width="411dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="24dp"
+        android:text="Astor Piazzolla pioneered the genre of Tango Nuevo, radically redefining the beloved dance music. Much of the Latin music heard today is inspired by his lush harmonies and haunting, seductive melodies. In this recital, music faculty members Derek Bromme and Jessica Schroeder feature works by Piazzolla and other Latin composers."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPi" />
+
+    <Button
+        android:id="@+id/buttonWebPi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Web Info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescruiptionPi" />
+
+    <Button
+        android:id="@+id/buttonCalendarPi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Add to Calendar"
+        app:layout_constraintStart_toEndOf="@+id/buttonWebPi"
+        app:layout_constraintTop_toTopOf="@+id/buttonWebPi" />
+
+    <Button
+        android:id="@+id/buttonMapPi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Map"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalendarPi"
+        app:layout_constraintTop_toTopOf="@+id/buttonCalendarPi" />
+
+    <TextView
+        android:id="@+id/textViewStatusPi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMapPi"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLife"
+        android:layout_width="104dp"
+        android:layout_height="131dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStatusPi"
+        app:srcCompat="@drawable/lifepic" />
+
+    <TextView
+        android:id="@+id/textViewLife"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Water: Sustaining Life in the 21st Century"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLife"
+        app:layout_constraintTop_toTopOf="@+id/imageViewLife" />
+
+    <TextView
+        android:id="@+id/textViewLifeDescription"
+        android:layout_width="286dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:text="October 26, 2023, 7:30-9:00 P.M"
+        app:layout_constraintStart_toStartOf="@+id/textViewLife"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLife" />
+
+    <TextView
+        android:id="@+id/textViewDescruiptionLife"
+        android:layout_width="401dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="52dp"
+        android:text="Historian Nancy Langston presents &quot;Climate Ghosts: Historical Legacies and the Future of Lake Superior Wildlife in the Anthropocene.&quot;"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLifeDescription" />
+
+    <Button
+        android:id="@+id/buttonWebLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Web Info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescruiptionLife" />
+
+    <Button
+        android:id="@+id/buttonCalendarLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Add to Calendar"
+        app:layout_constraintStart_toEndOf="@+id/buttonWebLife"
+        app:layout_constraintTop_toTopOf="@+id/buttonWebLife" />
+
+    <Button
+        android:id="@+id/buttonMapLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Map"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalendarLife"
+        app:layout_constraintTop_toTopOf="@+id/buttonCalendarLife" />
+
+    <TextView
+        android:id="@+id/textViewStatusLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMapLife"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <ScrollView
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="146dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
